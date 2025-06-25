@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kopi Pahit & Refleksi Diri</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 60px 20px;
+            background-color: #f8f8f8;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            position: relative; /* Untuk posisi watermark */
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 800px;
+            background-color: #ffffff;
+            padding: 40px 50px;
+            border-radius: 10px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 10; /* Pastikan konten di atas watermark */
+        }
+
+        h1 {
+            font-family: 'Merriweather', serif;
+            color: #4a4a4a;
+            text-align: center;
+            margin-bottom: 35px;
+            font-size: 2.5em;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        h1::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 3px;
+            background: #e74c3c;
+            margin: 15px auto 0;
+            border-radius: 2px;
+        }
+
+        p {
+            margin-bottom: 25px;
+            text-align: justify;
+            font-size: 1.05em;
+            line-height: 1.9;
+        }
+
+        .highlight {
+            font-weight: 600;
+            color: #d65a31;
+        }
+
+        .watermark {
+            position: fixed; /* Tetap di posisi meskipun discroll */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-25deg); /* Sedikit rotasi */
+            font-size: 15em; /* Ukuran sangat besar */
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.05); /* Sangat transparan */
+            pointer-events: none; /* Tidak bisa diklik/dipilih */
+            z-index: 1; /* Di belakang konten */
+            font-family: 'Arial Black', sans-serif; /* Font tebal untuk watermark */
+            white-space: nowrap; /* Pastikan watermark tidak pecah baris */
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 0.9em;
+            color: #777;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            p {
+                font-size: 1em;
+            }
+            .watermark {
+                font-size: 10em; /* Sesuaikan ukuran watermark untuk layar kecil */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px;
+                margin: 20px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            .watermark {
+                font-size: 7em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="watermark">IKBAL</div>
+
+    <div class="container">
+        <h1>Kopi Pahit dan Ironi Hidup</h1>
+
+        <p>
+            Aku muak. Aroma kopi instan di mejaku menambah kekesalan pada seminggu “bekerja” sebagai staf administrasi. Tumpukan dokumen, gosip rekan kerja, dan tatapan merendahkan bos membuatku mual. Di usia 30-an, aku terusik omelan ibu tentang pernikahan dan anak, padahal aku tak punya minat sedikit pun pada romansa. Masyarakat memandangku tak berguna, seorang pengecut yang lari dari “takdir” reproduksi.
+        </p>
+
+        <p>
+            Aku selalu sinis. Norma sosial bagiku tak lebih dari topeng naluri purba: pernikahan “jebakan kawin,” karier perbudakan. Semua konyol. Pelarianku adalah buku sejarah, yang selalu mengungkap korelasi mengerikan: pria lemah dibuang, perawan tua dianggap tak berguna. Aku sadar, masyarakat kuno dan modern sama saja; naluri bertahan hidup hanya dibungkus “cita-cita” dan “norma.”
+        </p>
+
+        <p>
+            Kekesalanku memuncak. Aku tak mau dibuang atau dianggap tak berguna. Jika masyarakat ingin aku punya “pasangan,” baiklah. Aku akan mencari wanita “kaya,” bukan untuk cinta, tapi untuk mewujudkan ide bisnis dan membuktikan aku bisa “berguna” dengan caraku sendiri.
+        </p>
+
+        <p>
+            Pekerjaan di kontraktor hanya batu loncatan kesekian. Aku benci rutinitas, otoritas, dan kepalsuan. Sering dipecat karena sering terlambat atau melontarkan pandangan nihilistik. Tabunganku menipis, sewa apartemen nyaris tak terbayar. Hidupku hampa, aku selalu merenung di taman namun, kali ini sebuah ide muncul. Mataku tertuju pada minimarket seberang jalan. Tempat ramai 24 jam dengan tugas sederhana, minim tekanan, dan pergantian shift yang memberi banyak waktu luang. Sempurna. Aku bisa bekerja seadanya, dan mungkin, bertemu seseorang yang “tersesat” sepertiku, yang bisa dimanfaatkan untuk ilusi “normal.” Simbiosis mutualisme tanpa romansa, demi kesuksesan otentik. Aku ingin menang atas permainan orang lain.
+        </p>
+
+        <p>
+            Maka, aku—yang membenci semua pekerjaan—melamar paruh waktu di minimarket itu. Bukan mencari makna atau kebahagiaan, hanya tempat berlindung sementara, panggung untuk memainkan peran sebagai bagian masyarakat, sambil mencemoohnya dari dalam. Aku akan jadi karyawan malas, tak becus, selalu mencari celah. Namun, aku berharap keberadaanku di sana membantuku memenuhi ekspektasi terbesar yang menghantuiku: menemukan pasangan. Mungkin, seorang wanita yang juga sekadar butuh “tampilan” normal di mata orang lain, seseorang yang bisa berbagi kesepian tanpa tuntutan emosional, cukup untuk sekadar memenuhi norma dan mengakhiri omelan ibuku.
+        </p>
+
+        <footer>
+            <p>&mdash; Sebuah Refleksi Dini Hari &mdash;</p>
+        </footer>
+    </div>
+</body>
+</html>
